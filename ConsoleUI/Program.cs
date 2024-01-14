@@ -1,10 +1,14 @@
-﻿namespace ConsoleUI
+﻿using BackEnd.Items;
+
+namespace ConsoleUI
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("IT Aset Management System");
+
+            Asset asset = new Asset();
         }
     }
 }
