@@ -11,12 +11,12 @@ namespace BackEnd.services
     public class PersonService
     {
 
-        public List<Person> personsList;
+        private List<Person> personsList;
 
         public PersonService()
         {
-            List<Person> personsList = new List<Person>();
-            this.personsList = personsList;
+            List<Person> personsList1 = new List<Person>();
+            personsList = personsList1;
         }
 
         public List<Person> GetAllPersons()
@@ -32,10 +32,11 @@ namespace BackEnd.services
 
             personsList.Add(person);
 
-            person.Id = 2;
-            person.Name = "Test2";
+            Person person1 = new Person();
+            person1.Id = 2;
+            person1.Name = "Test2";
 
-            personsList.Add(person);
+            personsList.Add(person1);
 
             return person.Id;
         }
