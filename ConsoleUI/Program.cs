@@ -13,11 +13,11 @@ namespace ConsoleUI
 
             PersonService personService = new PersonService();
             personService.AddNewPerson();
-            PersonService result = personService.GetAllPersons();
+            List<Person> result = personService.GetAllPersons();
 
-            foreach (PersonService ps in result)
+            foreach (Person ps in result)
             {
-
+                Console.WriteLine($"to jest linia {ps.Name}");
             }
 
         }
