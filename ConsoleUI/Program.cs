@@ -18,9 +18,9 @@ namespace ConsoleUI
 
             List<Person> result = personService.GetAllPersons();
 
-            foreach (Person ps in result)
+            foreach (Person person in result)
             {
-                Console.WriteLine($"to jest linia {ps.Name}");
+                Console.WriteLine($"to jest linia {person.Name} {person.Id}");
             }
 
         }
