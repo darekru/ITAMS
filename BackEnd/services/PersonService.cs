@@ -24,19 +24,13 @@ namespace BackEnd.services
             return personsList;
         }
 
-        public int AddNewPerson()
+        public int AddNewPerson(int ID, string NAME)
         {
             Person person = new Person();
-            person.Id = 1;
-            person.Name = "Test";
+            person.Id = ID;
+            person.Name = NAME;
 
             personsList.Add(person);
-
-            Person person1 = new Person();
-            person1.Id = 2;
-            person1.Name = "Test2";
-
-            personsList.Add(person1);
 
             return person.Id;
         }

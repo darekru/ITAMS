@@ -12,7 +12,10 @@ namespace ConsoleUI
             Asset asset = new Asset();
 
             PersonService personService = new PersonService();
-            personService.AddNewPerson();
+            personService.AddNewPerson(1,"Kowal");
+            personService.AddNewPerson(2, "Nowak");
+            personService.AddNewPerson(3, "Janiak");
+
             List<Person> result = personService.GetAllPersons();
 
             foreach (Person ps in result)
