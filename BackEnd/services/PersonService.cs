@@ -19,6 +19,18 @@ namespace BackEnd.services
             personsList = personsList1;
         }
 
+        public void DelPerson(int ID)
+        {
+            foreach (Person person in personsList)
+            {
+                if (person.Id == ID)
+                {
+                    personsList.Remove(person);
+                    break;
+                }
+            }
+        }
+
         public List<Person> GetAllPersons()
         {
             return personsList;

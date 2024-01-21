@@ -15,6 +15,15 @@ namespace ConsoleUI
             personService.AddNewPerson(1,"Kowal");
             personService.AddNewPerson(2, "Nowak");
             personService.AddNewPerson(3, "Janiak");
+            personService.AddNewPerson(2, "Janiak");
+
+            personService.AddNewPerson(2, "Janiak");
+            personService.AddNewPerson(2, "Janiak");
+            personService.AddNewPerson(2, "Janiak");
+            personService.AddNewPerson(2, "Janiak");
+            personService.AddNewPerson(2, "Janiak");
+
+            personService.DelPerson(2);
 
             List<Person> result = personService.GetAllPersons();
 
