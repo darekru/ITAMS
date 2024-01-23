@@ -43,7 +43,7 @@ namespace ConsoleUI
             Console.WriteLine("-------------------------");
             foreach (Asset ass in resultAsset)
             {
-                Console.WriteLine($"to jest sprzęt: {ass.Name} cena: {ass.Value}");
+                Console.WriteLine($"to jest sprzęt: {ass.Name} cena: {ass.Value} data odbioru {ass.RecivingDate}");
             }
 
             Console.ReadLine();
